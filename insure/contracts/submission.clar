@@ -1,6 +1,4 @@
-;; Health Insurance Claim Submission System
-
-;; Define constants
+;; Constants
 (define-constant contract-owner tx-sender)
 (define-constant err-unauthorized (err u401))
 (define-constant err-not-found (err u404))
@@ -47,7 +45,6 @@
   )
 )
 
-;; Public functions
 
 ;; Register a new healthcare provider
 (define-public (register-provider (name (string-utf8 50)) (license-number (string-utf8 20)))
